@@ -4,10 +4,11 @@
 * Maz0r for instructions which have been applied in here also. [Link here](https://github.com/maz0r/klipper_canbus)
 
 ## Goals
-* Remove X and Y drag chains -> leass wires.
-* Using U2C.
-* Using CANBoot for easier updates.
+* Remove X and Y drag chains -> less wires which can be broken and less weight on gantry.
+* Using Bigthree U2C.
+* Using CANBoot for easier updates in the future.
 * Stealthburner with EBB36 with cover.
+* [ ] Link to KEJAR31 repository
 
 ## Hardware
 * [ ] Enter used hardware
