@@ -16,4 +16,4 @@
 * This will done only if you need to update Candlelight or your board doesn't have one.
 * I ordered U2C board from Biqu ([link](https://biqu.equipment/products/bigtreetech-ebb-36-42-can-bus-for-connecting-klipper-expansion-device?_pos=1&_sid=f0f8330af&_ss=r&variant=39762747949154)) and it has Candlelight factory installed.
 3. [Install CAN network](can_network.md)
-4. 
+4. [Install CANboot for EBB36](ebb36.md)
