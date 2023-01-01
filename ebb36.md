@@ -38,4 +38,7 @@ make
 ### Install the firmware to the board
 
 
+### Troubleshoot
+* [ ] Will be added when problems will be faced.
+
 [Back to main site](README.md)
