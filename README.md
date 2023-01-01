@@ -1,4 +1,8 @@
 # Plan for CANBus
+
+## Big shout and credits for following persons
+* Maz0r for instructions which have been applied in here also. [Link here](https://github.com/maz0r/klipper_canbus)
+
 ## Goals
 * Remove X and Y drag chains -> leass wires.
 * Using U2C.
