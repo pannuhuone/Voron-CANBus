@@ -76,7 +76,7 @@ make
 * [ ] Add page for this
 
 ### Troubleshoot
-1. When installing the firmware, last information is ```dfu-util: Error during download get_status```, see picture below
+#### 1. When installing the firmware, last information is ```dfu-util: Error during download get_status```, see picture below
 
 ![image](https://user-images.githubusercontent.com/5571703/210182451-2c7b4501-dd6b-4198-b02a-13cd018ca4a2.png)
 
