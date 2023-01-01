@@ -15,7 +15,6 @@ sudo apt-get install cmake gcc-arm-none-eabi git
 cd ~
 git clone https://github.com/bigtreetech/candleLight_fw
 cd candleLight_fw
-git checkout stm32g0_support
 mkdir build
 cd build
 cmake .. -DCMAKE_TOOLCHAIN_FILE=../cmake/gcc-arm-none-eabi-8-2019-q3-update.cmake
