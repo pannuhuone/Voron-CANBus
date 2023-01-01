@@ -37,6 +37,7 @@ make
 
 ### Install the firmware to the board
 1. Install jumper to following pins on the board (image have been copied from EBB36 manual from Bigthreetech repository, [link here](https://github.com/bigtreetech/EBB))
+* The jumper will be needed that board can be powered with USB cable.
  
 ![image](https://user-images.githubusercontent.com/5571703/210182028-49adecd6-33d7-4e7c-9d56-28c77542c465.png)
 
@@ -46,7 +47,7 @@ make
 
 4. Check that your board in DFU mode with command in Raspberry ```lsusb```
 
-* Now you should see that board is in DFU mode and something like below should be listed (** Please not that ID might be different in your case!**)
+* Now you should see that board is in DFU mode and something like below should be listed (**Please not that ID might be different in your case!**)
 
 ```Bus 001 Device 005: ID 0483:df11 STMicroelectronics STM Device in DFU Mode```
 
@@ -56,12 +57,30 @@ make
 
 ![image](https://user-images.githubusercontent.com/5571703/210182509-e74b02b5-1b81-4bc0-80a8-e63da294e10b.png)
 
+# If you haven't yet installed CAN network, this is time to do so.
+* [ ] Check formatting for this reminder!
+
+6. Remove USB cable from the board
+
+7. Remove jumper from the board
+
+8. Insert CANbus cable (4-pin)
+* Please check couple of times that your cable pins that those are 
+
+9. Power up your printer
+
+10. Wait until your devices are up and running and check that you CAN network is up and you can see the devices
+* [ ] commands and outcomes here!
+
+[Next step: Install Klipper to EBB36]()
+* [ ] Add page for this
 
 ### Troubleshoot
 * [ ] Will be added when problems will be faced.
-1. Error when installing CANBoot to the board
+1. When installing the firmware, last information is ```dfu-util: Error during download get_status```, see picture below
 
 ![image](https://user-images.githubusercontent.com/5571703/210182451-2c7b4501-dd6b-4198-b02a-13cd018ca4a2.png)
 
+**Solution:** If line before the error is shown ```File downloaded successfully```, this error can be ignored.
 
 [Back to main site](README.md)
