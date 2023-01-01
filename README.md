@@ -12,4 +12,4 @@
 1. Physical setups.
 * Stealthburher setups.
 * Electronic comparement setups.
-2. Install Candlelight for U2C.
+2. [Install Candlelight for U2C](candlelight.md)
