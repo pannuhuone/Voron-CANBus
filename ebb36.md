@@ -36,9 +36,32 @@ make
 ![image](https://user-images.githubusercontent.com/5571703/210181767-25d94f9c-9fa8-422e-8ac5-367635dd05c8.png)
 
 ### Install the firmware to the board
+1. Install jumper to following pins on the board (image have been copied from EBB36 manual from Bigthreetech repository, [link here](https://github.com/bigtreetech/EBB))
+ 
+![image](https://user-images.githubusercontent.com/5571703/210182028-49adecd6-33d7-4e7c-9d56-28c77542c465.png)
+
+2. Connect your EBB36 with Raspberry using USB cable.
+
+3. Hold RESET and BOOT buttons on your board and release after a while.
+
+4. Check that your board in DFU mode with command in Raspberry ```lsusb```
+
+* Now you should see that board is in DFU mode and something like below should be listed (** Please not that ID might be different in your case!**)
+
+```Bus 001 Device 005: ID 0483:df11 STMicroelectronics STM Device in DFU Mode```
+
+5. Erase and install CANBoot firmware to the board. **Please not that you need to use correct ID which is shown to you in step 4!!!** In this example same ID have been used which is shown to me in step 4.
+
+```sudo dfu-util -a 0 -D ~/CanBoot/out/canboot.bin --dfuse-address 0x08000000:force:mass-erase:leave -d 0483:df11```
+
+![image](https://user-images.githubusercontent.com/5571703/210182509-e74b02b5-1b81-4bc0-80a8-e63da294e10b.png)
 
 
 ### Troubleshoot
 * [ ] Will be added when problems will be faced.
+1. Error when installing CANBoot to the board
+
+![image](https://user-images.githubusercontent.com/5571703/210182451-2c7b4501-dd6b-4198-b02a-13cd018ca4a2.png)
+
 
 [Back to main site](README.md)
