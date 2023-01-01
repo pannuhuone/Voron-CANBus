@@ -65,7 +65,7 @@ make
 7. Remove jumper from the board
 
 8. Insert CANbus cable (4-pin)
-* Please check couple of times that your cable pins that those are 
+* Please check couple of times that your cable pins in order.
 
 9. Power up your printer
 
