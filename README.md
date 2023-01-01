@@ -5,6 +5,9 @@
 * Using CANBoot for easier updates.
 * Stealthburner with EBB36 with cover.
 
+## Hardware
+* [ ] Enter used hardware
+
 ## Wiring for CAN
 ![voron_canbus_wiring](https://user-images.githubusercontent.com/5571703/210175147-d069ec34-d23b-4c70-a096-16d26bb934da.jpg)
 
