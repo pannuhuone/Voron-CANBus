@@ -14,7 +14,8 @@
 * [ ] Enter used hardware
 
 ## Wiring for CAN
-![voron_canbus_wiring](https://user-images.githubusercontent.com/5571703/210175147-d069ec34-d23b-4c70-a096-16d26bb934da.jpg)
+![image](https://user-images.githubusercontent.com/5571703/210214471-4e47f9d5-c75e-4fba-a2f2-508195fde808.png)
+
 
 ## Setup phases
 1. Physical setups.
