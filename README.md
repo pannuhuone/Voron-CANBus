@@ -14,7 +14,10 @@
 * [ ] Enter used hardware
 
 ## Wiring for CAN
-![image](https://user-images.githubusercontent.com/5571703/210214738-20594a0c-377b-4b67-9f57-dd373c3f51c8.png)
+![image](https://user-images.githubusercontent.com/5571703/210231123-c93c79a3-9f3c-410c-a355-f7c14e99283d.png)
+
+* [ ] Add description
+* [ ] Add types of wire + connectors in use
 
 ## Setup phases
 1. Physical setups.
