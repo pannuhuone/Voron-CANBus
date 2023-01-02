@@ -79,6 +79,8 @@ make
 
 ![image](https://user-images.githubusercontent.com/5571703/210248989-0d4a6656-740a-48c2-a7f1-966d66465cb8.png)
 
+* If CAN cable is not connected on one side, resistance between CAN-H and CAN-L should be 120 Ohm.
+
 10. Power up your printer.
 
 11. Wait until your devices are up and running and check that you CAN network is up and you can see the devices
