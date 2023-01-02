@@ -1,4 +1,4 @@
-# Plan for CANBus
+# Installing CANBus
 
 ## Big shout and credits for following persons
 * Maz0r for instructions which have been applied in here also. [Link here](https://github.com/maz0r/klipper_canbus)
