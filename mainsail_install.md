@@ -20,4 +20,4 @@ Built the Klipper
 
 ![image](https://user-images.githubusercontent.com/5571703/210272561-6ddaf716-697a-4d2a-a7c7-dbc94b2bd8f6.png)
 
-And followed rest of the instructions for updating.
+And followed rest of the instructions for updating the Octopus.
