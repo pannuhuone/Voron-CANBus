@@ -69,9 +69,19 @@ make
 8. Insert CANbus cable (4-pin)
 * **Please check couple of times that pins from your cable are connecting to correct ones in the plug on the board!**
 
-9. Power up your printer.
+9. Check that you have 120R jumper installed on either end of CANBus, meaning on EBB36 and U2C boards. Please see the pictures from below
 
-10. Wait until your devices are up and running and check that you CAN network is up and you can see the devices
+![image](https://user-images.githubusercontent.com/5571703/210248586-f22c61df-90ce-48d5-9ab0-8de4337cb588.png)
+
+![image](https://user-images.githubusercontent.com/5571703/210248644-dce1894c-64ea-4a84-815a-5ed24aac9b5b.png)
+
+* When boards unpowered and cable is connected between EBB36 and U2C boards, measure resitance between CAN-H and CAN-L. It should be 60 Ohm. I measured resistance from U2C board pins (picture from below)
+
+![image](https://user-images.githubusercontent.com/5571703/210248989-0d4a6656-740a-48c2-a7f1-966d66465cb8.png)
+
+10. Power up your printer.
+
+11. Wait until your devices are up and running and check that you CAN network is up and you can see the devices
 
 ```~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0```
 
