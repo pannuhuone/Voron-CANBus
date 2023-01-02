@@ -18,14 +18,15 @@ cd CanBoot
 ```
 make menuconfig
 ```
-* Select correct values for board with chip **STM32G0B1**
-* Remember to enter same bus speed than you entered for U2C (network setup)!
+Select correct values for board with chip **STM32G0B1**
+
+Remember to enter same bus speed than you entered for U2C (network setup)!
 
 ![image](https://user-images.githubusercontent.com/5571703/210181316-fa95f903-4438-48a8-a8a1-6a1f32ddc0c9.png)
 
-* [ ] How to choose correct communication interface?
+* PB8/PB9 will be used when CAN Bus is used, PA11/PA12 is for using USB.
 
-* Save configuration: Quit ```Q``` and Save Changes ```Y``` and exit.
+Save configuration: Quit ```Q``` and Save Changes ```Y``` and exit.
 
 3. Compile the firmware
 ```
