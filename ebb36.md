@@ -57,8 +57,11 @@ make
 
 ![image](https://user-images.githubusercontent.com/5571703/210182509-e74b02b5-1b81-4bc0-80a8-e63da294e10b.png)
 
-# If you haven't yet installed CAN network, this is time to do so.
-* [ ] Check formatting for this reminder!
+-----
+
+## If you haven't yet installed CAN network, this is time to do so.
+
+-----
 
 ### Check that you can see the CAN devices
 
@@ -90,6 +93,8 @@ make
 * You should see following. **Please note that XXXXXXXXXX should be replaced by your CANbus UUID.**
 
 ```"Found canbus_uuid=XXXXXXXXXX, Application: CanBoot"```
+
+![image](https://user-images.githubusercontent.com/5571703/210254169-e1b623e1-2636-4e3d-84a5-bfacd2585b53.png)
 
 [Next step: Install Klipper to EBB36]()
 * [ ] Add page for this
