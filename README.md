@@ -34,6 +34,6 @@
 
 5. [Install Klipper to EBB36](ebb_klipper_install.md)
 
-6. printer.cfg configuration
+6. [Mainsail configuration](mainsail_install.md)
 
 7. Updating Klipper on EBB36
