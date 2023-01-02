@@ -1,14 +1,16 @@
-# Installing CANBus
+# Installing CANBus for Voron 2.4R2
 
 ## Big shout and credits for following persons
 * Maz0r for instructions which have been applied in here also. [Link here](https://github.com/maz0r/klipper_canbus)
 
-## Goals
+## Goals for CANBus
 * Remove X and Y drag chains -> less wires which can be broken and less weight on gantry.
 * Using Bigthree U2C.
 * Using CANBoot for easier updates in the future.
 * Stealthburner with EBB36 with cover.
 * [ ] Link to KEJAR31 repository
+
+## Other used Voron mods
 
 ## Hardware
 * [ ] Enter used hardware
