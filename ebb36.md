@@ -81,7 +81,7 @@ make
 
 * If CAN cable is not connected on one side, resistance between CAN-H and CAN-L should be 120 Ohm.
 
-10. Power up your printer.
+10. Power up your printer with U2C board and EBB36 board connected with wiring (24V, GND, CAN-H, CAN-L).
 
 11. Wait until your devices are up and running and check that you CAN network is up and you can see the devices
 
