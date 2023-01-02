@@ -4,7 +4,7 @@
 * **Before proceeding it is critical that your CAN network is configured for your printer, failure to setup the network will cause a problem when you try to connect devices. [Click here for installing the network.](can_network.md)**
 
 ## Installing CANboot
-* Chip on EBB board
+* Chip on my EBB board
 ![image](https://user-images.githubusercontent.com/5571703/210181066-093cb59a-13f4-43e1-a7fb-6ce9342ede84.png)
 
 ### Generate CANBoot configuration and compile firmware
