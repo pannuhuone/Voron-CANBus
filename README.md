@@ -23,9 +23,17 @@
 1. Physical setups.
 * [ ] Stealthburner setups.
 * [ ] Electronic comparement setups.
+
 2. [Install Candlelight for U2C](candlelight.md) 
 * This will done only if you need to update Candlelight or your board doesn't have one.
 * I ordered U2C board from Biqu ([link](https://biqu.equipment/products/bigtreetech-ebb-36-42-can-bus-for-connecting-klipper-expansion-device?_pos=1&_sid=f0f8330af&_ss=r&variant=39762747949154)) and it has Candlelight factory installed.
+
 3. [Install CAN network](can_network.md)
+
 4. [Install CANboot for EBB36](ebb36.md)
+
 5. [Install Klipper to EBB36](ebb_klipper_install.md)
+
+6. printer.cfg configuration
+
+7. Updating Klipper on EBB36
