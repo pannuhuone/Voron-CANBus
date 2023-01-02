@@ -60,17 +60,24 @@ make
 # If you haven't yet installed CAN network, this is time to do so.
 * [ ] Check formatting for this reminder!
 
+### Check that you can see the CAN devices
+
 6. Remove USB cable from the board
 
 7. Remove jumper from the board
 
 8. Insert CANbus cable (4-pin)
-* Please check couple of times that your cable pins in order.
+* **Please check couple of times that pins from your cable are connecting to correct ones in the plug on the board!**
 
-9. Power up your printer
+9. Power up your printer.
 
 10. Wait until your devices are up and running and check that you CAN network is up and you can see the devices
-* [ ] commands and outcomes here!
+
+```~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0```
+
+* You should see following. **Please note that XXXXXXXXXX should be replaced by your CANbus UUID.**
+
+```"Found canbus_uuid=XXXXXXXXXX, Application: CanBoot"```
 
 [Next step: Install Klipper to EBB36]()
 * [ ] Add page for this
