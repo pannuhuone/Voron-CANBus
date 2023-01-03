@@ -22,7 +22,9 @@ Built the Klipper
 
 And followed rest of the instructions for updating the Octopus.
 
-Make sure that you have bed and hot end termistors connected, otherwise you will get error about those.
+Make sure that you have bed and hot end termistors connected, otherwise you will get error about those. I added separate thermistor directly to Octopus before I had hot end thermistor connected and configure to EBB36. Otherwise you should get following error
+
+![image](https://user-images.githubusercontent.com/5571703/210335096-581216b9-b2ee-41f5-9c6d-811022cde0ea.png)
 
 ## CAN related configurations to printer.cfg
 * Sample configurations for EBB36 v1.2 can be found from Bigthreetech Github site, [link here](https://github.com/bigtreetech/EBB/blob/master/EBB%20CAN%20V1.1%20(STM32G0B1)/sample-bigtreetech-ebb-canbus-v1.2.cfg).
@@ -49,7 +51,22 @@ probe_points:
     150, 150, 20
 ```
 
-3. 
+3. Hot end thermistor, change original setting from Extruder section point to EBB pin
+Original:
+```
+## Check what thermistor type you have. See https://www.klipper3d.org/Config_Reference.html#common-thermistors for common thermistor types.
+## Use "Generic 3950" for NTC 100k 3950 thermistors
+sensor_type: Generic 3950
+sensor_pin: PF4
+```
+Changed:
+```
+## Check what thermistor type you have. See https://www.klipper3d.org/Config_Reference.html#common-thermistors for common thermistor types.
+## Use "Generic 3950" for NTC 100k 3950 thermistors
+sensor_type: Generic 3950
+#sensor_pin: PF4
+sensor_pin: can0: PA3
+```
 
 # Troubleshoot
 ### 1. Did have problem with Mainsail and no configuration files cannot be seen on ```Machine -> Config files``` -section
