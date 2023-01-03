@@ -52,6 +52,7 @@ probe_points:
 ```
 
 3. Hot end thermistor, change original setting from Extruder section point to EBB pin
+
 Original:
 ```
 ## Check what thermistor type you have. See https://www.klipper3d.org/Config_Reference.html#common-thermistors for common thermistor types.
