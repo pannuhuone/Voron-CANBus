@@ -238,6 +238,8 @@ Found out that I made an error for tmc_2209 extruder configuration. At first I e
 
 Added configuration from Voron Stealthburner GitHub site which includes macros, different color for different states. [Link here](https://github.com/VoronDesign/Voron-Stealthburner/blob/main/Firmware/stealthburner_leds.cfg)
 
+* [ ] Check configuration
+
 # Troubleshoot
 ### 1. Did have problem with Mainsail and no configuration files cannot be seen on ```Machine -> Config files``` -section
 
