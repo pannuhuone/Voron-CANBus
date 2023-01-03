@@ -74,6 +74,35 @@ sensor_type: Generic 3950
 sensor_pin: can0: PA3
 ```
 
+### 4. Stealthburner fans
+
+Changes to ```Fan control``` section
+
+Original:
+```
+##  Hotend Fan - FAN1
+[heater_fan hotend_fan]
+pin: PE5
+max_power: 1.0
+kick_start_time: 0.5
+heater: extruder
+heater_temp: 50.0
+##  If you are experiencing back flow, you can reduce fan_speed
+#fan_speed: 1.0
+```
+
+Changed:
+```
+## Stealthburner, Extruder fan
+[heater_fan hotend_fan]
+pin: can0: PA0
+heater: extruder
+max_power: 1.0
+kick_start_time: 0.5
+heater: extruder
+heater_temp: 50.0
+```
+
 # Troubleshoot
 ### 1. Did have problem with Mainsail and no configuration files cannot be seen on ```Machine -> Config files``` -section
 
