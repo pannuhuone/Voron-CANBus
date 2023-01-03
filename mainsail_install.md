@@ -240,6 +240,10 @@ Added configuration from Voron Stealthburner GitHub site which includes macros, 
 
 * [ ] Check configuration
 
+### 8. Stepper motors check for Z axis
+
+Instructions can be found from [here](https://docs.vorondesign.com/build/startup/#stepper-motor-check). After first check I needed to change direction of all motors.
+
 # Troubleshoot
 ### 1. Did have problem with Mainsail and no configuration files cannot be seen on ```Machine -> Config files``` -section
 
