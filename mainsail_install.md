@@ -2,9 +2,14 @@
 * I assume that you have already installed Mainsail image to Raspberry.
 
 ## Adding basic printer configuration for Mainsail
-1. I copied initial printer.cfg from [Voron document site](https://docs.vorondesign.com/build/software/configuration.html), I choose V2 [Octopus printer.cfg](https://raw.githubusercontent.com/VoronDesign/Voron-2/Voron2.4/firmware/klipper_configurations/Octopus/Voron2_Octopus_Config.cfg).
-2. Changed needed properties from printer.cfg. Link for [instructions](https://docs.vorondesign.com/build/software/configuration.html).
-3. I had to update firmware on my Octopus, because Klipper wasn't able to connect mcu I had MARLIN text on my device identifier. [Instructions for updating klipper can be found from here](https://docs.vorondesign.com/build/software/octopus_klipper.html). I got following error
+### 1. Initial printer.cfg
+I copied initial printer.cfg from [Voron document site](https://docs.vorondesign.com/build/software/configuration.html), I choose V2 [Octopus printer.cfg](https://raw.githubusercontent.com/VoronDesign/Voron-2/Voron2.4/firmware/klipper_configurations/Octopus/Voron2_Octopus_Config.cfg).
+
+### 2. Basic settings for printer.cfg
+Changed needed properties from printer.cfg. Link for [instructions](https://docs.vorondesign.com/build/software/configuration.html).
+
+### 3. Updating Octopus firmware
+I had to update firmware on my Octopus, because Klipper wasn't able to connect mcu I had MARLIN text on my device identifier. [Instructions for updating klipper can be found from here](https://docs.vorondesign.com/build/software/octopus_klipper.html). I got following error
 
 ![image](https://user-images.githubusercontent.com/5571703/210272179-771dc049-b240-41fd-b52c-f3db2bf7e580.png)
 
@@ -29,14 +34,14 @@ Make sure that you have bed and hot end termistors connected, otherwise you will
 ## CAN related configurations to printer.cfg
 * Sample configurations for EBB36 v1.2 can be found from Bigthreetech Github site, [link here](https://github.com/bigtreetech/EBB/blob/master/EBB%20CAN%20V1.1%20(STM32G0B1)/sample-bigtreetech-ebb-canbus-v1.2.cfg).
 
-1. Add CAN Bus MCU configuration
+### 1. Add CAN Bus MCU configuration
 ```
 [mcu can0]
 canbus_uuid: YOUR_CAN_UUID
 ```
 ![image](https://user-images.githubusercontent.com/5571703/210330072-681cb399-c119-459c-9716-a238c92a0a3c.png)
 
-2. Add ADXL345 configuration
+### 2. Add ADXL345 configuration
 ```
 [adxl345]
 cs_pin: can0: PB12
@@ -51,7 +56,7 @@ probe_points:
     150, 150, 20
 ```
 
-3. Hot end thermistor, change original setting from Extruder section point to EBB pin
+### 3. Hot end thermistor, change original setting from Extruder section point to EBB pin
 
 Original:
 ```
