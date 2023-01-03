@@ -137,13 +137,12 @@ Changed:
 ```
 ##  Print Cooling Fan - FAN0
 [fan]
-#pin: PA8
-pin: can0: PA1
+pin: can0:PA1
 kick_start_time: 0.5
 ##  Depending on your fan, you may need to increase this value
 ##  if your fan will not start. Can change cycle_time (increase)
 ##  if your fan is not able to slow down effectively
-off_below: 0.10
+#off_below: 0.10
 ```
 
 ### 6. Extruder
@@ -177,6 +176,14 @@ nozzle_diameter: 0.400
 filament_diameter: 1.75
 heater_pin: PA2
 ```
+```
+[tmc2209 extruder]
+uart_pin: PE1
+interpolate: false
+run_current: 0.5
+sense_resistor: 0.110
+stealthchop_threshold: 0
+```
 
 Changed:
 ```
@@ -207,6 +214,24 @@ nozzle_diameter: 0.400
 filament_diameter: 1.75
 heater_pin: can0:PB13
 ```
+```
+[tmc2209 extruder]
+uart_pin: can0:PE15
+#interpolate: false
+run_current: 0.5
+sense_resistor: 0.110
+stealthchop_threshold: 0
+```
+
+Testing extruder motor with following command
+```
+STEPPER_BUZZ STEPPER=extruder
+```
+
+Klipper shutdown and I got following error
+
+![image](https://user-images.githubusercontent.com/5571703/210368643-b8e230ff-150f-4ea2-b021-540c8feeb57e.png)
+
 
 # Troubleshoot
 ### 1. Did have problem with Mainsail and no configuration files cannot be seen on ```Machine -> Config files``` -section
