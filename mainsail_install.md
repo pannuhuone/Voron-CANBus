@@ -24,16 +24,30 @@ And followed rest of the instructions for updating the Octopus.
 
 Make sure that you have bed and hot end termistors connected, otherwise you will get error about those.
 
-## CAN configurations to printer.cfg
+## CAN related configurations to printer.cfg
+* Sample configurations for EBB36 v1.2 can be found from Bigthreetech Github site, [link here](https://github.com/bigtreetech/EBB/blob/master/EBB%20CAN%20V1.1%20(STM32G0B1)/sample-bigtreetech-ebb-canbus-v1.2.cfg).
+
 1. Add CAN Bus MCU configuration
 ```
 [mcu can0]
 canbus_uuid: YOUR_CAN_UUID
 ```
+![image](https://user-images.githubusercontent.com/5571703/210330072-681cb399-c119-459c-9716-a238c92a0a3c.png)
 
+2. Add ADXL345 configuration
+```
+[adxl345]
+cs_pin: can0: PB12
+spi_software_sclk_pin: can0: PB10
+spi_software_mosi_pin: can0: PB11
+spi_software_miso_pin: can0: PB2
+axes_map: x,y,z
+```
+
+3. 
 
 # Troubleshoot
-1. Did have problem with Mainsail and no configuration files cannot be seen on ```Machine -> Config files``` -section
+### 1. Did have problem with Mainsail and no configuration files cannot be seen on ```Machine -> Config files``` -section
 
 **Solution:** In this version, at least, there were problem with paths and following commands resolve this problem
 ```
