@@ -42,6 +42,11 @@ spi_software_sclk_pin: can0: PB10
 spi_software_mosi_pin: can0: PB11
 spi_software_miso_pin: can0: PB2
 axes_map: x,y,z
+
+[resonance_tester]
+accel_chip: adxl345
+probe_points:
+    150, 150, 20
 ```
 
 3. 
