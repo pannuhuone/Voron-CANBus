@@ -9,7 +9,7 @@ I copied initial printer.cfg from [Voron document site](https://docs.vorondesign
 Changed needed properties from printer.cfg. Link for [instructions](https://docs.vorondesign.com/build/software/configuration.html).
 
 ### 3. Updating Octopus firmware
-I had to update firmware on my Octopus, because Klipper wasn't able to connect mcu I had MARLIN text on my device identifier. [Instructions for updating klipper can be found from here](https://docs.vorondesign.com/build/software/octopus_klipper.html). I got following error
+I had to update firmware on my Octopus, because Klipper wasn't able to connect mcu. I had MARLIN text on my device identifier. [Instructions for updating klipper can be found from here](https://docs.vorondesign.com/build/software/octopus_klipper.html). I got following error
 
 ![image](https://user-images.githubusercontent.com/5571703/210272179-771dc049-b240-41fd-b52c-f3db2bf7e580.png)
 
