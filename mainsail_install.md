@@ -216,7 +216,7 @@ heater_pin: can0:PB13
 ```
 ```
 [tmc2209 extruder]
-uart_pin: can0:PE15
+uart_pin: can0:PA15
 #interpolate: false
 run_current: 0.5
 sense_resistor: 0.110
@@ -232,6 +232,7 @@ Klipper shutdown and I got following error
 
 ![image](https://user-images.githubusercontent.com/5571703/210368643-b8e230ff-150f-4ea2-b021-540c8feeb57e.png)
 
+Found out that I made an error for tmc_2209 extruder configuration. At first I entered uart_pin as ```uart_pin: can0:PA15``` and correct one is ```uart_pin: can0:PA15```
 
 # Troubleshoot
 ### 1. Did have problem with Mainsail and no configuration files cannot be seen on ```Machine -> Config files``` -section
