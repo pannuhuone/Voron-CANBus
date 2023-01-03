@@ -243,10 +243,10 @@ Added following to Leds section
 pin: can0:PD3
 chain_count: 3
 color_order: GRBW
-initial_RED: 1.0
-initial_GREEN: 0.0
-initial_BLUE: 1.0
-initial_WHITE: 0.0
+initial_RED: 0.5
+initial_GREEN: 0.5
+initial_BLUE: 0.5
+initial_WHITE: 0.5
 ```
 
 # Troubleshoot
