@@ -71,6 +71,8 @@ probe_points:
 
 ### 4. Hot end thermistor, change original setting from Extruder section point to EBB pin
 
+Before this step, I removed the thermistor which I attached temporarily directly to Octopus.
+
 Original:
 ```
 ## Check what thermistor type you have. See https://www.klipper3d.org/Config_Reference.html#common-thermistors for common thermistor types.
@@ -118,14 +120,92 @@ heater: extruder
 heater_temp: 50.0
 ```
 
-#### Blower (5015)
+#### Part cooling fanm, blower (5015)
 
 Original:
 ```
+[fan]
+pin: PA8
+kick_start_time: 0.5
+##  Depending on your fan, you may need to increase this value
+##  if your fan will not start. Can change cycle_time (increase)
+##  if your fan is not able to slow down effectively
+off_below: 0.10
 ```
 
 Changed:
 ```
+##  Print Cooling Fan - FAN0
+[fan]
+#pin: PA8
+pin: can0: PA1
+kick_start_time: 0.5
+##  Depending on your fan, you may need to increase this value
+##  if your fan will not start. Can change cycle_time (increase)
+##  if your fan is not able to slow down effectively
+off_below: 0.10
+```
+
+### 6. Extruder
+
+Original:
+```
+#####################################################################
+#   Extruder
+#####################################################################
+
+##  Connected to MOTOR_6
+##  Heater - HE0
+##  Thermistor - T0
+[extruder]
+step_pin: PE2
+dir_pin: PE3
+enable_pin: !PD4
+##  Update value below when you perform extruder calibration
+##  If you ask for 100mm of filament, but in reality it is 98mm:
+##  rotation_distance = <previous_rotation_distance> * <actual_extrude_distance> / 100
+##  22.6789511 is a good starting point
+rotation_distance: 22.6789511   #Bondtech 5mm Drive Gears
+##  Update Gear Ratio depending on your Extruder Type
+##  Use 50:10 for Stealthburner/Clockwork 2
+##  Use 50:17 for Afterburner/Clockwork (BMG Gear Ratio)
+##  Use 80:20 for M4, M3.1
+gear_ratio: 50:17               #BMG Gear Ratio
+microsteps: 32
+full_steps_per_rotation: 200    #200 for 1.8 degree, 400 for 0.9 degree
+nozzle_diameter: 0.400
+filament_diameter: 1.75
+heater_pin: PA2
+```
+
+Changed:
+```
+#####################################################################
+#   Extruder
+#####################################################################
+
+##  Connected to MOTOR_6
+##  Heater - HE0
+##  Thermistor - T0
+[extruder]
+step_pin: can0:PD0
+dir_pin: can0:PD1
+enable_pin: !can0:PD2
+##  Update value below when you perform extruder calibration
+##  If you ask for 100mm of filament, but in reality it is 98mm:
+##  rotation_distance = <previous_rotation_distance> * <actual_extrude_distance> / 100
+##  22.6789511 is a good starting point
+rotation_distance: 22.6789511   #Bondtech 5mm Drive Gears
+##  Update Gear Ratio depending on your Extruder Type
+##  Use 50:10 for Stealthburner/Clockwork 2
+##  Use 50:17 for Afterburner/Clockwork (BMG Gear Ratio)
+##  Use 80:20 for M4, M3.1
+gear_ratio: 50:17               #BMG Gear Ratio
+microsteps: 32
+full_steps_per_rotation: 200    #200 for 1.8 degree, 400 for 0.9 degree
+nozzle_diameter: 0.400
+filament_diameter: 1.75
+heater_pin: can0:PB13
 ```
 
 # Troubleshoot
