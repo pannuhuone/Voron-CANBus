@@ -21,3 +21,23 @@ Built the Klipper
 ![image](https://user-images.githubusercontent.com/5571703/210272561-6ddaf716-697a-4d2a-a7c7-dbc94b2bd8f6.png)
 
 And followed rest of the instructions for updating the Octopus.
+
+Make sure that you have bed and hot end termistors connected, otherwise you will get error about those.
+
+## CAN configurations to printer.cfg
+1. Add CAN Bus MCU configuration
+```
+[mcu can0]
+canbus_uuid: YOUR_CAN_UUID
+```
+
+
+# Troubleshoot
+1. Did have problem with Mainsail and no configuration files cannot be seen on ```Machine -> Config files``` -section
+
+**Solution:** In this version, at least, there were problem with paths and following commands resolve this problem
+```
+cd ~/moonraker
+git pull
+./scripts/data-path-fix.sh
+```
