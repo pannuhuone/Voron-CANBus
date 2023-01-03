@@ -40,3 +40,5 @@
 6. [Mainsail configuration](mainsail_install.md)
 
 7. Updating Klipper on EBB36
+
+TBD. Adding Klipper screen for BTT TFT50 V2.0
