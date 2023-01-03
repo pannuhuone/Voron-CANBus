@@ -55,3 +55,5 @@ cd ~/moonraker
 git pull
 ./scripts/data-path-fix.sh
 ```
+
+[Back to main site](README.md)
