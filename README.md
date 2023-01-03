@@ -2,6 +2,7 @@
 
 ## Big shout and credits for following persons
 * Maz0r for instructions which have been applied in here also. [Link here](https://github.com/maz0r/klipper_canbus)
+* [ ] Update credits information
 
 ## Goals for CANBus
 * Remove X and Y drag chains -> less wires which can be broken and less weight on gantry.
