@@ -234,6 +234,21 @@ Klipper shutdown and I got following error
 
 Found out that I made an error for tmc_2209 extruder configuration. At first I entered uart_pin as ```uart_pin: can0:PE15``` and correct one is ```uart_pin: can0:PA15```
 
+### 7. Stealthburner leds
+
+Added following to Leds section
+
+```
+[neopixel sb_leds]
+pin: can0:PD3
+chain_count: 3
+color_order: GRBW
+initial_RED: 1.0
+initial_GREEN: 0.0
+initial_BLUE: 1.0
+initial_WHITE: 0.0
+```
+
 # Troubleshoot
 ### 1. Did have problem with Mainsail and no configuration files cannot be seen on ```Machine -> Config files``` -section
 
