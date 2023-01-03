@@ -236,18 +236,7 @@ Found out that I made an error for tmc_2209 extruder configuration. At first I e
 
 ### 7. Stealthburner leds
 
-Added following to Leds section
-
-```
-[neopixel sb_leds]
-pin: can0:PD3
-chain_count: 3
-color_order: GRBW
-initial_RED: 0.5
-initial_GREEN: 0.5
-initial_BLUE: 0.5
-initial_WHITE: 0.5
-```
+Added configuration from Voron Stealthburner GitHub site which includes macros, different color for different states. [Link here](https://github.com/VoronDesign/Voron-Stealthburner/blob/main/Firmware/stealthburner_leds.cfg)
 
 # Troubleshoot
 ### 1. Did have problem with Mainsail and no configuration files cannot be seen on ```Machine -> Config files``` -section
