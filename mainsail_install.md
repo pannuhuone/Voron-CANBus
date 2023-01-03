@@ -41,7 +41,20 @@ canbus_uuid: YOUR_CAN_UUID
 ```
 ![image](https://user-images.githubusercontent.com/5571703/210330072-681cb399-c119-459c-9716-a238c92a0a3c.png)
 
-### 2. Add ADXL345 configuration
+### 2. Add EBB36 temperature
+By adding following, you can see EBB36 temperature from Mainsail Dashboard view
+```
+[temperature_sensor EBB36]
+sensor_type: temperature_mcu
+sensor_mcu: can0
+min_temp: 0
+max_temp: 100
+```
+Then following will be seen on Dashboard
+
+![image](https://user-images.githubusercontent.com/5571703/210348390-38ba1df8-edc8-40a0-a860-1678609e1e9f.png)
+
+### 3. Add ADXL345 configuration
 ```
 [adxl345]
 cs_pin: can0: PB12
@@ -56,7 +69,7 @@ probe_points:
     150, 150, 20
 ```
 
-### 3. Hot end thermistor, change original setting from Extruder section point to EBB pin
+### 4. Hot end thermistor, change original setting from Extruder section point to EBB pin
 
 Original:
 ```
@@ -74,9 +87,11 @@ sensor_type: Generic 3950
 sensor_pin: can0: PA3
 ```
 
-### 4. Stealthburner fans
+### 5. Stealthburner fans
 
 Changes to ```Fan control``` section
+
+#### Extruder fan (4010)
 
 Original:
 ```
@@ -101,6 +116,16 @@ max_power: 1.0
 kick_start_time: 0.5
 heater: extruder
 heater_temp: 50.0
+```
+
+#### Blower (5015)
+
+Original:
+```
+```
+
+Changed:
+```
 ```
 
 # Troubleshoot
