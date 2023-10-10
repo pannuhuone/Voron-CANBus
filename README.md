@@ -1,6 +1,6 @@
 # Installing CANBus for Voron 2.4R2
 
-## Big shout and credits for following persons
+## Big shout out and credits for following
 * Maz0r for instructions which have been applied in here also. [Link here](https://github.com/maz0r/klipper_canbus)
 * [ ] Update credits information
 
