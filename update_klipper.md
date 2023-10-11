@@ -14,7 +14,8 @@ make menuconfig
 make
 ```
 * Stop the Klipper service
-* Find UUID for 
+* Find UUID for CAN device
+* 
 
 ## Updating Klipper on EBB36
 
