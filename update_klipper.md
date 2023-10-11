@@ -8,9 +8,15 @@
 git clone https://github.com/Arksine/katapult
 cd katapult
 ```
-* Configure and compile Katapult
+* Configure Katapult
 ```
 make menuconfig
+```
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/d0dc06a0-2192-4867-a1de-2c40f6f98c81)
+
+* Compile Katapult
+```
+make clean
 make
 ```
 * Stop the Klipper service
