@@ -21,6 +21,8 @@ Save configuration: Quit ```Q``` and Save Changes ```Y``` and exit.
 make clean
 make
 ```
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/6a7dc8e8-7132-4c7c-9915-ed932d8a945a)
+
 * Stop the Klipper service
 * Find UUID for CAN device
 * 
