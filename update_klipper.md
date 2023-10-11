@@ -13,7 +13,7 @@ cd katapult
 make menuconfig
 make
 ```
-* Stop the Klipper service at first
+* Stop the Klipper service
 * Find UUID for 
 
 ## Updating Klipper on EBB36
