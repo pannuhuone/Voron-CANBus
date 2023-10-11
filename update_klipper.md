@@ -13,6 +13,7 @@ cd katapult
 make menuconfig
 ```
 ![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/d0dc06a0-2192-4867-a1de-2c40f6f98c81)
+Save configuration: Quit ```Q``` and Save Changes ```Y``` and exit.
 
 * Compile Katapult
 ```
