@@ -29,7 +29,6 @@ make
 
 ## Updating Klipper on EBB36
 Current version for Klipper are following
-![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/173c9755-83d8-4ba0-9dc6-735da6ae1481)
-
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/d66d3fa0-e8f8-49cc-a02b-f6194b3a1be5)
 
 [Back to main site](README.md)
