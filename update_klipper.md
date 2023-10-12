@@ -31,7 +31,7 @@ make
 Current version for Klipper are following
 ![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/d66d3fa0-e8f8-49cc-a02b-f6194b3a1be5)
 
-* Compile Klipper
+* Configure Klipper
 ```
 make menuconfig
 ```
