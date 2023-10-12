@@ -41,6 +41,13 @@ make menuconfig
 
 ![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/6c860873-b5f8-4d66-ae15-b904544e081f)
 
+* Upload Klipper to EBB36 board
+```
+python3 ~/CanBoot/scripts/flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u YOUR_UUID
+```
+> [!IMPORTANT]
+> Replace YOUR_UUID from the UUID from your printer.cfg.
+
 ## Troubleshoot
 > [!NOTE]
 > CANbus query (below) doesn't show devices, because this shows only devices which are not yet initalized. ([information here](https://www.klipper3d.org/CANBUS.html#finding-the-canbus_uuid-for-new-micro-controllers))
