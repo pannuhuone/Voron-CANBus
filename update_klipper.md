@@ -41,5 +41,12 @@ make menuconfig
 
 ![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/6c860873-b5f8-4d66-ae15-b904544e081f)
 
+> [!NOTE]
+> CANbus query (below) doesn't show devices, because this shows only devices which are not yet initalized. ([information here](https://www.klipper3d.org/CANBUS.html#finding-the-canbus_uuid-for-new-micro-controllers))
+```
+~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
+```
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/15eefd85-8d34-4e89-b59b-f395182181b8)
+
 
 [Back to main site](README.md)
