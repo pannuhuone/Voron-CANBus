@@ -38,6 +38,7 @@ make menuconfig
 ![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/d79732e7-8869-4630-9721-517c23dcbe7b)
 
 * Build Klipper
+
 ![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/6c860873-b5f8-4d66-ae15-b904544e081f)
 
 
