@@ -24,6 +24,16 @@ You can update Klipper to MCU by using Kiauh. You can find instructions for inst
 
 ![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/e9a0a78d-0956-40c4-87c2-dd8cd9bd30ae)
 
+* Flash new firmware to MCU with Kiauh
+
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/df9f4936-8aa8-4855-a4c0-c0825979f476)
+
+My choice was regular flashing method (1) via USB
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/a0bed4a7-d17d-4928-aaf0-3bb5cc4c6dcb)
+
+Then Kiauh handles the update process and everything went well
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/ee7441f9-3a67-44ce-920c-ea17e10575e7)
+
 ## Updating the Katapult (formerly know as CANboot)
 
 > [!WARNING]
