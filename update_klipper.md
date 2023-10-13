@@ -1,3 +1,12 @@
+## Updating MCU
+
+> [!NOTE]
+> I have [BIGTREETECH Octopus V1.1 Control Board](https://biqu.equipment/products/bigtreetech-octopus-v1-1) as MCU and following is based on that
+> It might be that some part will be different if another board is used!
+
+> [!WARNING]
+> This section (update MCU) is work in progress. I haven't done the update yet and I need to verify the flow and commands.
+
 ## Updating the Katapult (formerly know as CANboot)
 
 > [!WARNING]
@@ -55,15 +64,6 @@ python3 ~/CanBoot/scripts/flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u Y
 ```
 > [!IMPORTANT]
 > Replace YOUR_UUID from the UUID from your printer.cfg.
-
-## Updating MCU
-
-> [!NOTE]
-> I have [BIGTREETECH Octopus V1.1 Control Board](https://biqu.equipment/products/bigtreetech-octopus-v1-1) as MCU and following is based on that
-> It might be that some part will be different if another board is used!
-
-> [!WARNING]
-> This section (update MCU) is work in progress. I haven't done the update yet and I need to verify the flow and commands.
 
 ## Troubleshoot
 > [!NOTE]
