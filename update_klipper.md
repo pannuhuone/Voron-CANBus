@@ -14,7 +14,7 @@
 
 You can update Klipper to MCU by using Kiauh. You can find instructions for installing Kiauh from [Github](https://github.com/dw-0/kiauh).
 
-* Build Klipper
+* Build Klipper with Kiauh
 > [!NOTE]
 > You need information what chip is uswed on your board. I'm using STM32F446ZET6, so I'm using following configuration
 
