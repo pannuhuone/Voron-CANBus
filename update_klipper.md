@@ -1,7 +1,7 @@
 ## Sections
 * [Updating MCU](https://github.com/pannuhuone/Voron-CANBus/blob/main/update_klipper.md#updating-mcu)
-* [Updating the Katapult (CANboot)[(https://github.com/pannuhuone/Voron-CANBus/blob/main/update_klipper.md#updating-the-katapult-formerly-know-as-canboot)
-* [Updating Klipper on EBB36]()
+* [Updating the Katapult (CANboot)](https://github.com/pannuhuone/Voron-CANBus/blob/main/update_klipper.md#updating-the-katapult-formerly-know-as-canboot)
+* [Updating Klipper on EBB36](https://github.com/pannuhuone/Voron-CANBus/blob/main/update_klipper.md#updating-klipper-on-ebb36)
 
 ## Updating MCU
 
