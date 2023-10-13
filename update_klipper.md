@@ -32,7 +32,7 @@ Then Kiauh handles the update process and everything went well
 ![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/ee7441f9-3a67-44ce-920c-ea17e10575e7)
 
 And new firmware version can be seen also Mainsail
-![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/53b29333-775b-48e4-bad7-e99d5c8cf581)
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/66296397-6566-469d-b493-12ed0cf3b120)
 
 
 ## Updating Klipper on EBB36
@@ -41,7 +41,7 @@ And new firmware version can be seen also Mainsail
 > This section (update Klipper) is work in progress. I haven't done the update yet and I need to verify the flow and commands.
 
 Current version for Klipper are following
-![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/d66d3fa0-e8f8-49cc-a02b-f6194b3a1be5)
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/5b39526e-780c-4cbe-a0e8-6b237d65aa4a)
 
 * Configure Klipper
 ```
