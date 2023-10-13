@@ -9,6 +9,13 @@
 > I have [BIGTREETECH Octopus V1.1 Control Board](https://biqu.equipment/products/bigtreetech-octopus-v1-1) as MCU and following is based on that
 > It might be that some part will be different if another board is used!
 
+You can update Klipper to MCU by using Kiauh. You can find instructions for installing Kiauh from [Github](https://github.com/dw-0/kiauh).
+
+
+ 
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/315d69ca-56a1-4383-9391-e60880979268)
+
+
 > [!WARNING]
 > This section (update MCU) is work in progress. I haven't done the update yet and I need to verify the flow and commands.
 
