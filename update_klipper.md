@@ -15,10 +15,14 @@
 You can update Klipper to MCU by using Kiauh. You can find instructions for installing Kiauh from [Github](https://github.com/dw-0/kiauh).
 
 * Build Klipper
+> [!NOTE]
+> You need information what chip is uswed on your board. I'm using STM32F446ZET6, so I'm using following configuration
 
-![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/ce405511-f9f6-4243-a542-6cb86486ff07)
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/900fb218-2ddc-4731-bc59-964d49948b49)
 
-![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/315d69ca-56a1-4383-9391-e60880979268)
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/cfb108b6-6975-475a-b454-a7da9f9230c7)
+
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/e9a0a78d-0956-40c4-87c2-dd8cd9bd30ae)
 
 ## Updating the Katapult (formerly know as CANboot)
 
