@@ -97,7 +97,7 @@ make
 
 ![image](https://user-images.githubusercontent.com/5571703/210254169-e1b623e1-2636-4e3d-84a5-bfacd2585b53.png)
 
-[Next step: Install Klipper to EBB36]()
+[Next step: Install Klipper to EBB36](https://github.com/pannuhuone/Voron-CANBus/blob/main/ebb_klipper_install.md)
 * [ ] Add page for this
 
 ### Troubleshoot
