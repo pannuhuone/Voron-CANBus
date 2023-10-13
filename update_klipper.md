@@ -37,9 +37,6 @@ And new firmware version can be seen also Mainsail
 
 ## Updating Klipper on EBB36
 
-> [!WARNING]
-> This section (update Klipper) is work in progress. I haven't done the update yet and I need to verify the flow and commands.
-
 Current version for Klipper are following
 ![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/5b39526e-780c-4cbe-a0e8-6b237d65aa4a)
 
