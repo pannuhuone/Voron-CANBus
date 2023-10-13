@@ -13,7 +13,7 @@ You can update Klipper to MCU by using Kiauh. You can find instructions for inst
 
 * Build Klipper with Kiauh
 > [!NOTE]
-> You need information what chip is uswed on your board. I'm using STM32F446ZET6, so I'm using following configuration
+> You need information what chip is used on your board. I'm using STM32F446ZET6, so I'm using following configuration
 
 ![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/900fb218-2ddc-4731-bc59-964d49948b49)
 
