@@ -109,24 +109,7 @@ make
 ```
 ![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/6a7dc8e8-7132-4c7c-9915-ed932d8a945a)
 
-* Stop the Klipper service
-```
-sudo service klipper stop
-```
-
-* Upload new version to EBB36
-> [!IMPORTANT]
-> Replace YOUR_UUID from the UUID for CAN device (EBB36) from your printer.cfg.
-
-```
-
-```
-
-
-* Start Klipper service
-```
-sudo service klipper start
-```
+TBD
 
 ## Troubleshoot
 > [!NOTE]
