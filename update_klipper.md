@@ -56,12 +56,28 @@ make
 ```
 ![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/6c860873-b5f8-4d66-ae15-b904544e081f)
 
-* Upload Klipper to EBB36 board
+
+* At first stop Klipper service
 ```
-python3 ~/CanBoot/scripts/flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u YOUR_UUID
+sudo service klipper stop
 ```
+
+* Upload new Klipper version to EBB36
 > [!IMPORTANT]
 > Replace YOUR_UUID from the UUID from your printer.cfg.
+
+> [!NOTE]
+> Following commands for uploading the firmware to EBB 36 applies when CANboot have been replaced by Katalpult.
+
+```
+python3 ~/katapult/scripts/flashtool.py -i can0 -f ~/klipper/out/klipper.bin -u YOUR_UUID
+```
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/647e8205-af98-497e-99b5-7e04744bde84)
+
+* Start Klipper service
+```
+sudo service klipper start
+```
 
 ## Updating the Katapult (formerly know as CANboot)
 
