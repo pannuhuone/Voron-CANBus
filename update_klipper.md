@@ -5,9 +5,6 @@
 
 ## Updating MCU
 
-> [!WARNING]
-> This section (update MCU) is work in progress. I haven't done the update yet and I need to verify the flow and commands.
-
 > [!NOTE]
 > I have [BIGTREETECH Octopus V1.1 Control Board](https://biqu.equipment/products/bigtreetech-octopus-v1-1) as MCU and following is based on that
 > It might be that some part will be different if another board is used!
@@ -33,6 +30,10 @@ My choice was regular flashing method (1) via USB
 
 Then Kiauh handles the update process and everything went well
 ![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/ee7441f9-3a67-44ce-920c-ea17e10575e7)
+
+And new firmware version can be seen also Mainsail
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/53b29333-775b-48e4-bad7-e99d5c8cf581)
+
 
 ## Updating the Katapult (formerly know as CANboot)
 
