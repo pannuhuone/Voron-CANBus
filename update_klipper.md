@@ -1,7 +1,7 @@
 ## Sections
 * [Updating MCU](https://github.com/pannuhuone/Voron-CANBus/blob/main/update_klipper.md#updating-mcu)
-* [Updating the Katapult (CANboot)](https://github.com/pannuhuone/Voron-CANBus/blob/main/update_klipper.md#updating-the-katapult-formerly-know-as-canboot)
 * [Updating Klipper on EBB36](https://github.com/pannuhuone/Voron-CANBus/blob/main/update_klipper.md#updating-klipper-on-ebb36)
+* [Updating the Katapult (CANboot)](https://github.com/pannuhuone/Voron-CANBus/blob/main/update_klipper.md#updating-the-katapult-formerly-know-as-canboot)
 
 ## Updating MCU
 
@@ -35,6 +35,31 @@ And new firmware version can be seen also Mainsail
 ![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/53b29333-775b-48e4-bad7-e99d5c8cf581)
 
 
+## Updating Klipper on EBB36
+
+> [!WARNING]
+> This section (update Klipper) is work in progress. I haven't done the update yet and I need to verify the flow and commands.
+
+Current version for Klipper are following
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/d66d3fa0-e8f8-49cc-a02b-f6194b3a1be5)
+
+* Configure Klipper
+```
+make menuconfig
+```
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/d79732e7-8869-4630-9721-517c23dcbe7b)
+
+* Build Klipper
+
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/6c860873-b5f8-4d66-ae15-b904544e081f)
+
+* Upload Klipper to EBB36 board
+```
+python3 ~/CanBoot/scripts/flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u YOUR_UUID
+```
+> [!IMPORTANT]
+> Replace YOUR_UUID from the UUID from your printer.cfg.
+
 ## Updating the Katapult (formerly know as CANboot)
 
 > [!WARNING]
@@ -67,31 +92,6 @@ make
 * Stop the Klipper service
 * Find UUID for CAN device
 * 
-
-## Updating Klipper on EBB36
-
-> [!WARNING]
-> This section (update Klipper) is work in progress. I haven't done the update yet and I need to verify the flow and commands.
-
-Current version for Klipper are following
-![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/d66d3fa0-e8f8-49cc-a02b-f6194b3a1be5)
-
-* Configure Klipper
-```
-make menuconfig
-```
-![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/d79732e7-8869-4630-9721-517c23dcbe7b)
-
-* Build Klipper
-
-![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/6c860873-b5f8-4d66-ae15-b904544e081f)
-
-* Upload Klipper to EBB36 board
-```
-python3 ~/CanBoot/scripts/flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u YOUR_UUID
-```
-> [!IMPORTANT]
-> Replace YOUR_UUID from the UUID from your printer.cfg.
 
 ## Troubleshoot
 > [!NOTE]
