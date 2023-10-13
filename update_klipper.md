@@ -1,4 +1,8 @@
 ## Updating the Katapult (formerly know as CANboot)
+
+> [!WARNING]
+> This section (update Katapult) is work in progress. I haven't done the update yet and I need to verify the flow and commands.
+
 * It might be that this won't be needed. Klipper can be updated without updating the Katapult.
 * Github repository for Katapult: [https://github.com/Arksine/katapult](https://github.com/Arksine/katapult).
 
@@ -28,6 +32,10 @@ make
 * 
 
 ## Updating Klipper on EBB36
+
+> [!WARNING]
+> This section (update Klipper) is work in progress. I haven't done the update yet and I need to verify the flow and commands.
+
 Current version for Klipper are following
 ![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/d66d3fa0-e8f8-49cc-a02b-f6194b3a1be5)
 
