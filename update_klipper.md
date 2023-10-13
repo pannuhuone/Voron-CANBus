@@ -1,3 +1,8 @@
+## Sections
+[Updating MCU]()
+[Updating the Katapult (CANboot)[()
+[Updating Klipper on EBB36]()
+
 ## Updating MCU
 
 > [!NOTE]
