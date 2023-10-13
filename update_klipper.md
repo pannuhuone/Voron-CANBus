@@ -76,7 +76,7 @@ python3 ~/katapult/scripts/flashtool.py -i can0 -f ~/klipper/out/klipper.bin -u 
 sudo service klipper start
 ```
 
-New version have been updated for EBB36
+New version have been updated to EBB36
 ![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/f279cfb4-46c1-4d59-958b-c9e9ec0fe906)
 
 
