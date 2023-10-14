@@ -19,7 +19,7 @@ You can update Klipper to MCU by using Kiauh. You can find instructions for inst
 
 ![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/30434315-4a01-4f5e-955e-d21dcd71751b)
 
-
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/9a2e633c-230b-48f4-a551-1e3d5d756471)
 
 * Flash new firmware to MCU with Kiauh
 
