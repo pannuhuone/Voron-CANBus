@@ -17,41 +17,41 @@ You can update Klipper to MCU by using Kiauh. You can find instructions for inst
 
 ![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/586bc7c8-a2ea-4864-a270-434bfafd2593)
 
-![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/cfb108b6-6975-475a-b454-a7da9f9230c7)
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/30434315-4a01-4f5e-955e-d21dcd71751b)
 
-![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/e9a0a78d-0956-40c4-87c2-dd8cd9bd30ae)
+
 
 * Flash new firmware to MCU with Kiauh
 
-![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/df9f4936-8aa8-4855-a4c0-c0825979f476)
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/2d3a0b72-c13f-4659-a1f9-4a027fd5ef9b)
 
 My choice was regular flashing method (1) via USB
-![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/a0bed4a7-d17d-4928-aaf0-3bb5cc4c6dcb)
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/9f4389fc-ffdf-4bbb-8d7e-7102f7133c84)
 
 Then Kiauh handles the update process and everything went well
-![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/ee7441f9-3a67-44ce-920c-ea17e10575e7)
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/0bea56cc-2430-410e-85df-2e8466eee8bc)
 
 And new firmware version can be seen also Mainsail
-![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/66296397-6566-469d-b493-12ed0cf3b120)
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/c2dace2f-a0ba-4b42-a4c8-cfac3d6a320a)
 
 
 ## Updating Klipper on EBB36
 
 Current version for Klipper are following
-![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/5b39526e-780c-4cbe-a0e8-6b237d65aa4a)
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/25805933-4f16-4f03-b72d-dcb3f15f28b5)
 
 * Configure Klipper
 ```
 make menuconfig
 ```
-![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/d79732e7-8869-4630-9721-517c23dcbe7b)
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/d18f6b6e-fa69-4471-9bad-2fef7b96c2f4)
 
 * Build Klipper
 ```
 make clean
 make
 ```
-![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/6c860873-b5f8-4d66-ae15-b904544e081f)
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/7348d6d5-4906-4052-9e0b-227a13e010b7)
 
 
 * At first stop Klipper service
@@ -69,7 +69,7 @@ sudo service klipper stop
 ```
 python3 ~/katapult/scripts/flashtool.py -i can0 -f ~/klipper/out/klipper.bin -u YOUR_UUID
 ```
-![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/647e8205-af98-497e-99b5-7e04744bde84)
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/a31f4b49-be8e-48bd-9f02-2a9cd16e5dd3)
 
 * Start Klipper service
 ```
@@ -77,7 +77,7 @@ sudo service klipper start
 ```
 
 New version have been updated to EBB36
-![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/f279cfb4-46c1-4d59-958b-c9e9ec0fe906)
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/a4dea366-f1f7-44e7-8957-5f7541d48bd7)
 
 
 ## Updating the Katapult (formerly know as CANboot)
@@ -98,7 +98,7 @@ cd katapult
 ```
 make menuconfig
 ```
-![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/d0dc06a0-2192-4867-a1de-2c40f6f98c81)
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/0a8e0aff-3928-4fff-a568-689ff44df478)
 
 Save configuration: Quit ```Q``` and Save Changes ```Y``` and exit.
 
@@ -107,7 +107,7 @@ Save configuration: Quit ```Q``` and Save Changes ```Y``` and exit.
 make clean
 make
 ```
-![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/6a7dc8e8-7132-4c7c-9915-ed932d8a945a)
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/2ed0f09c-cb86-4240-94bb-487aa6d87864)
 
 TBD
 
@@ -117,7 +117,7 @@ TBD
 ```
 ~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
 ```
-![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/15eefd85-8d34-4e89-b59b-f395182181b8)
+![image](https://github.com/pannuhuone/Voron-CANBus/assets/5571703/b9558c90-6127-4a9a-9432-e3ece5314e03)
 
 
 [Back to main site](README.md)
